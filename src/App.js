@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import RouteSwitch from "./components/RouteSwitch";
 import Cart from "./components/Cart"
 
