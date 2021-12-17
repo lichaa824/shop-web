@@ -1,11 +1,9 @@
 import "./App.scss";
 import RouteSwitch from "./components/RouteSwitch";
-import Cart from "./components/Cart"
 
 function App() {
   return (
     <div className="App">
-      <Cart />
       <RouteSwitch />
     </div>
   );

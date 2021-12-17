@@ -1,13 +1,13 @@
 import "../styles/mouses.scss";
 
 const mousesList = [
-  { name: "razer_deathadder", price: 100, img: "" },
-  { name: "logitech_g203", price: 150, img: "" },
-  { name: "logitech_gpro_wireless", price: 150, img: "" },
-  { name: "razer_basilik_v3", price: 150, img: "" },
-  { name: "razer_naga", price: 150, img: "" },
-  { name: "steelseries_sensei_310", price: 150, img: "" },
-  { name: "steelseries_prime_wireless", price: 150, img: "" },
+  { name: "razer_deathadder", price: 35, img: "" },
+  { name: "logitech_g203", price: 50, img: "" },
+  { name: "logitech_gpro_wireless", price: 73, img: "" },
+  { name: "razer_basilik_v3", price: 70, img: "" },
+  { name: "razer_naga", price: 64, img: "" },
+  { name: "steelseries_sensei_310", price: 38, img: "" },
+  { name: "steelseries_prime_wireless", price: 90, img: "" },
 ];
 
 function formatName(name) {
@@ -35,20 +35,22 @@ function getMouseInfoFormatted(mouse) {
   return { name: mouseName, price: mousePrice, img: mouseImg };
 }
 
-const Mouses = () => {
+function Mouses(props) {
+
   const template = (obj) => {
     return (
-      <div className="item-container"key={obj.name}>
+      <div className="item-container" key={obj.name}>
         <h3>{obj.name}</h3>
         <div className="img-container">
           <img className="img" src={obj.img} alt="" />
         </div>
         <h2>Price {obj.price}</h2>
+        <button onClick={() => props.setter(obj)}>Add to cart</button>
       </div>
     );
   };
 
   return mousesList.map((mouse) => template(getMouseInfoFormatted(mouse)));
-};
+}
 
 export default Mouses;
