@@ -6,6 +6,8 @@ import { useState } from "react";
 function Shop() {
   const [currentShop, setCurrentShop] = useState([]);
 
+
+
   function itemAlready(item, arr) {
     let check = arr.filter((e) => (e.name === item.name) === true);
     return check.length > 0;
@@ -21,17 +23,18 @@ function Shop() {
     let formatted = { name: obj.name, price: obj.price, cant: 1 };
     if (itemAlready(formatted, newShop)) {
       newShop[indexOfObj(formatted, newShop)].cant += 1;
+      setCurrentShop(newShop);
     } else {
       newShop.push(formatted);
       setCurrentShop(newShop);
     }
-    console.log(newShop);
-  }
+  };
+
 
   return (
     <div className="shop-container">
       <Cart itemsBought={currentShop} />
-      <Mouses setter={updateShopArray} />
+      <Mouses indexOfObj={indexOfObj} currentShop={currentShop} setter={updateShopArray} />
     </div>
   );
 }

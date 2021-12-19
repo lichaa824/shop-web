@@ -1,7 +1,8 @@
+
 import "../styles/mouses.scss";
 
 const mousesList = [
-  { name: "razer_deathadder", price: 35, img: "" },
+  { name: "razer_deathadder", price: 35, img: ""},
   { name: "logitech_g203", price: 50, img: "" },
   { name: "logitech_gpro_wireless", price: 73, img: "" },
   { name: "razer_basilik_v3", price: 70, img: "" },
@@ -37,6 +38,10 @@ function getMouseInfoFormatted(mouse) {
 
 function Mouses(props) {
 
+  const cant = (obj) => {
+    return props.indexOfObj(obj,props.currentShop) > -1 ? props.currentShop[props.indexOfObj(obj,props.currentShop)].cant : ''
+  };
+
   const template = (obj) => {
     return (
       <div className="item-container" key={obj.name}>
@@ -46,6 +51,7 @@ function Mouses(props) {
         </div>
         <h2>Price {obj.price}</h2>
         <button onClick={() => props.setter(obj)}>Add to cart</button>
+        <h2> {cant(obj)} </h2>
       </div>
     );
   };
