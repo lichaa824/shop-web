@@ -1,14 +1,13 @@
-
 import "../styles/mouses.scss";
 
 const mousesList = [
-  { name: "razer_deathadder", price: 35, img: ""},
+  { name: "razer_deathadder", price: 35, img: "" },
   { name: "logitech_g203", price: 50, img: "" },
   { name: "logitech_gpro_wireless", price: 73, img: "" },
   { name: "razer_basilik_v3", price: 70, img: "" },
   { name: "razer_naga", price: 64, img: "" },
   { name: "steelseries_sensei_310", price: 38, img: "" },
-  { name: "steelseries_prime_wireless", price: 90, img: "" },
+  { name: "steelseries_prime_wireless", price: 90, img: "" }
 ];
 
 function formatName(name) {
@@ -16,7 +15,6 @@ function formatName(name) {
   for (let i = 0; i < str.length; i++) {
     str[i] = str[i].charAt(0).toUpperCase() + str[i].substr(1);
   }
-
   return str.join(" ");
 }
 
@@ -37,21 +35,29 @@ function getMouseInfoFormatted(mouse) {
 }
 
 function Mouses(props) {
-
   const cant = (obj) => {
-    return props.indexOfObj(obj,props.currentShop) > -1 ? props.currentShop[props.indexOfObj(obj,props.currentShop)].cant : ''
+    return props.indexOfObj(obj, props.currentShop) > -1
+      ? props.currentShop[props.indexOfObj(obj, props.currentShop)].cant
+      : 0;
   };
 
   const template = (obj) => {
     return (
       <div className="item-container" key={obj.name}>
-        <h3>{obj.name}</h3>
+        <p>{obj.name}</p>
         <div className="img-container">
           <img className="img" src={obj.img} alt="" />
         </div>
-        <h2>Price {obj.price}</h2>
-        <button onClick={() => props.setter(obj)}>Add to cart</button>
-        <h2> {cant(obj)} </h2>
+        <p>Price {obj.price}</p>
+        <div className="add-cart">
+          <button className="item-button button-16" onClick={() => props.remover(obj)}>
+            -
+          </button>
+          <p> {cant(obj)} </p>
+          <button className="item-button button-16" onClick={() => props.adder(obj)}>
+          +
+          </button>
+        </div>
       </div>
     );
   };

@@ -1,5 +1,12 @@
-.shop-container {
-    display: grid;
-    gap: 50px;
+.shop{
+    margin-top: 25px;
+    width: 75vw;
+    height: 75vh;
+};
+
+.shop-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 };
 
