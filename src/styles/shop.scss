@@ -1,10 +1,15 @@
 .shop{
+    background-image: linear-gradient(to top, rgb(150, 26, 74, 0.6) 0%, hsl(216, 98%, 39%, 0.6) 50% ,);
     margin-top: 25px;
     width: 75vw;
     height: 75vh;
+    margin-left: 25px; 
+    border-radius: 10px;
 };
 
 .shop-container{
+    margin-top: 25px;
+    margin-left: 15px;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
