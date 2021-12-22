@@ -48,8 +48,9 @@ function Shop(props) {
   }
 
   return (
+    <div className="flex">
+    <Cart itemsBought={currentShop} />
     <div className="shop">
-      <Cart itemsBought={currentShop} />
       <div className="shop-container">
         <Mouses
           indexOfObj={indexOfObj}
@@ -58,6 +59,7 @@ function Shop(props) {
           remover={remover}
         />
       </div>
+    </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 .nav-pre{
-    background-image: linear-gradient(to top, rgba(9, 32, 62, 0.9) 0%, rgba(32, 41, 49, 0) 100%);
+    background-image: linear-gradient(to bottom, rgba(9, 32, 62, 0.9) 0%, rgba(32, 41, 49, 0.3) 90%);
     height: 5vh;
     max-height: 100px;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

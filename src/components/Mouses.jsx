@@ -7,7 +7,10 @@ const mousesList = [
   { name: "razer_basilik_v3", price: 70, img: "" },
   { name: "razer_naga", price: 64, img: "" },
   { name: "steelseries_sensei_310", price: 38, img: "" },
-  { name: "steelseries_prime_wireless", price: 90, img: "" }
+  { name: "steelseries_prime_wireless", price: 90, img: "" },
+  {name: "logitech_g604", price: 100, img: ""},
+  {name: "benq_zowie_zA11B", price: 80, img: ""},
+  {name: "logitech_g603", price: 70, img: ""}
 ];
 
 function formatName(name) {
@@ -48,7 +51,7 @@ function Mouses(props) {
         <div className="img-container">
           <img className="img" src={obj.img} alt="" />
         </div>
-        <p>Price {obj.price}</p>
+        <p className="price" >Price {obj.price}</p>
         <div className="add-cart">
           <button className="item-button button-16" onClick={() => props.remover(obj)}>
             -

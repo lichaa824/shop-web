@@ -8,7 +8,7 @@ function Home() {
         <h1 className="title">
           <span>Welcome!</span>
           <span>to the</span>
-          <span>Gaming Shop</span>
+          <span>Mouse Shop</span>
         </h1>
       </section>
     </div>
