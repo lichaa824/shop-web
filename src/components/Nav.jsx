@@ -4,8 +4,11 @@ import "../styles/nav.scss";
 function Nav() {
   return (
     <nav className="nav-pre">
-      <Link to="/"> Home </Link>
-      <Link to="shop">
+      <Link className="home-tab grow" to="/">
+        {" "}
+        Home{" "}
+      </Link>
+      <Link className="shop-tab grow" to="shop">
         Shop
       </Link>
     </nav>

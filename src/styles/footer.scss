@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  max-height: 100px;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.16) 3px 0px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.git-bottom,
+git-bottom:hover,
+git-bottom:active,
+git-bottom:visited,
+git-bottom:focus {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}

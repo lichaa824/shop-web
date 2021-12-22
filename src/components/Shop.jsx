@@ -9,9 +9,9 @@ function Shop(props) {
 
   const { saveToShopVault, shopVault } = props;
 
-  useEffect(() =>{
+  useEffect(() => {
     setCurrentShop(shopVault);
-  },[shopVault]);
+  }, [shopVault]);
 
   function itemAlready(item, arr) {
     let check = arr.filter((e) => (e.name === item.name) === true);
@@ -49,17 +49,17 @@ function Shop(props) {
 
   return (
     <div className="flex">
-    <Cart itemsBought={currentShop} />
-    <div className="shop">
-      <div className="shop-container">
-        <Mouses
-          indexOfObj={indexOfObj}
-          currentShop={currentShop}
-          adder={adder}
-          remover={remover}
-        />
+      <Cart itemsBought={currentShop} />
+      <div className="shop">
+        <div className="shop-container">
+          <Mouses
+            indexOfObj={indexOfObj}
+            currentShop={currentShop}
+            adder={adder}
+            remover={remover}
+          />
+        </div>
       </div>
-    </div>
     </div>
   );
 }
