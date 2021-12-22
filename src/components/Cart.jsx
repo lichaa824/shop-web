@@ -1,19 +1,25 @@
 import { useState } from "react";
 import "../styles/cart.scss";
+import { BsCart } from "react-icons/bs";
 
-function Cart() {
-  const [active, setActive] = useState(true);
+function Cart(props) {
+  const [active, setActive] = useState(false);
 
   const toggleClass = () => {
     let state = !active;
     setActive(state);
   };
 
+
   return (
-    <div onClick={toggleClass}>
-      <p>Carrito show up</p>
-      <div className={active ? "active" : "non-active"}>
-        <p> Soy el carrito</p>
+    <div>
+      <div onClick={toggleClass} className="cart-icon">
+        {" "}
+        <BsCart className="icon" />
+      </div>
+
+      <div className={active ? "cart-div active" : "cart-div non-active"}>
+      <button onClick={()=>console.log(props.itemsBought)}>test</button>
       </div>
     </div>
   );
