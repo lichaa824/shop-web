@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/shop-web/static/css/main.d23ffd7a.css",
+    "main.js": "/shop-web/static/js/main.3058cf7f.js",
+    "static/media/steelseries_sensei_310.webp": "/shop-web/static/media/steelseries_sensei_310.4a3b77a9def6e0502e06.webp",
+    "static/media/background-test.jpeg": "/shop-web/static/media/background-test.f82a03ffb9f2842e2dd7.jpeg",
+    "static/media/steelseries_prime_wireless.webp": "/shop-web/static/media/steelseries_prime_wireless.c03a443b49653e9077c9.webp",
+    "static/media/logitech_g203.webp": "/shop-web/static/media/logitech_g203.de01785e116bc045a0ab.webp",
+    "static/media/razer_basilik_v3.webp": "/shop-web/static/media/razer_basilik_v3.a48545ee7d5b91bc2cbf.webp",
+    "static/media/logitech_g604.webp": "/shop-web/static/media/logitech_g604.ad007e76ff4a05f906e2.webp",
+    "static/media/razer_naga.webp": "/shop-web/static/media/razer_naga.2a2c00c62b1edd96033d.webp",
+    "static/media/benq_zowie_zA11B.webp": "/shop-web/static/media/benq_zowie_zA11B.37f882dd1a29d1bb7ccc.webp",
+    "static/media/razer_deathadder.webp": "/shop-web/static/media/razer_deathadder.9268ca1e523738968123.webp",
+    "static/media/logitech_g603.webp": "/shop-web/static/media/logitech_g603.30822a7456acf3f55f02.webp",
+    "static/media/logitech_gpro_wireless.webp": "/shop-web/static/media/logitech_gpro_wireless.3e9f8a12e43199be3d09.webp",
+    "index.html": "/shop-web/index.html",
+    "main.d23ffd7a.css.map": "/shop-web/static/css/main.d23ffd7a.css.map",
+    "main.3058cf7f.js.map": "/shop-web/static/js/main.3058cf7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d23ffd7a.css",
+    "static/js/main.3058cf7f.js"
+  ]
+}
