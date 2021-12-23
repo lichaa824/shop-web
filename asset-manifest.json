@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shop-web/static/css/main.d23ffd7a.css",
-    "main.js": "/shop-web/static/js/main.7e14aa08.js",
+    "main.js": "/shop-web/static/js/main.9a00db7f.js",
     "static/media/steelseries_sensei_310.webp": "/shop-web/static/media/steelseries_sensei_310.4a3b77a9def6e0502e06.webp",
     "static/media/background-test.jpeg": "/shop-web/static/media/background-test.f82a03ffb9f2842e2dd7.jpeg",
     "static/media/steelseries_prime_wireless.webp": "/shop-web/static/media/steelseries_prime_wireless.c03a443b49653e9077c9.webp",
@@ -15,10 +15,10 @@
     "static/media/logitech_gpro_wireless.webp": "/shop-web/static/media/logitech_gpro_wireless.3e9f8a12e43199be3d09.webp",
     "index.html": "/shop-web/index.html",
     "main.d23ffd7a.css.map": "/shop-web/static/css/main.d23ffd7a.css.map",
-    "main.7e14aa08.js.map": "/shop-web/static/js/main.7e14aa08.js.map"
+    "main.9a00db7f.js.map": "/shop-web/static/js/main.9a00db7f.js.map"
   },
   "entrypoints": [
     "static/css/main.d23ffd7a.css",
-    "static/js/main.7e14aa08.js"
+    "static/js/main.9a00db7f.js"
   ]
 }
